@@ -1,5 +1,5 @@
 function show(smt) {
-  console.log(smt);
+  console.log(`%С ${smt}`, ' color: green, font-size:14px');
 }
 
 // const date1 = new Date()
@@ -79,6 +79,7 @@ class Timer {
       return;
     }
     const startTime = Date.now();
+  
     this.isActive = true;
     this.timetId = setInterval(() => {
       const currentTime = Date.now();
@@ -111,8 +112,12 @@ function updateTimer(time) {
 }
 
 function startOnClick() {
+  
+console.log(`'початок відліку'`)
   timer.start();
 }
 function stopOnClick() {
   timer.stop();
 }
+
+
